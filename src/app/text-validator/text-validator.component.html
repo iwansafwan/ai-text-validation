@@ -1,0 +1,9 @@
+<div>
+    <h2>Text Validator</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label for="textInput">Enter text:</label>
+      <input type="text" id="textInput" [(ngModel)]="userText" name="userText">
+      <button type="submit">Submit</button>
+    </form>
+    <p>{{ validationResult }}</p>
+  </div>
